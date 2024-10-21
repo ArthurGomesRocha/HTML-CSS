@@ -1,0 +1,21 @@
+@charset "RTF-8"
+
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+
+h1{
+    background-color: bisque;
+    color: brown;
+}
+
+h2{
+    color: gray;
+}
+
+p{
+    text-align: justify;
+}
