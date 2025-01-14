@@ -27,13 +27,35 @@ header{
     text-align: center;
     background-color: #F2911B;
     text-transform: uppercase;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
 }
 
+#boximg{
+    background-color: white;
+    height:300px;
+    background-image: url(imagens/capa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.329);
+}
+
+ nav > a:hover{
+    background-color: #F2A516;
+    color: #F8F7F9;
+    text-decoration: underline;
+    transition: 1s;
+    border-radius: 10px;
+
+}
 header > nav > a {
-    margin-left: 10vw;
     display: inline-block;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 3px #0000005d;
+    width: 20vw;
+    padding: 10px;
+    margin: 10px 0px;
 }
 
 body > article{
@@ -41,13 +63,13 @@ body > article{
 }
 
 body{
-    background-color: #F8F7F9;
+    background-color: white;
 }
 
 #img1{
-    height: 500px;
-    background-image: url(imagens/freepic3.jpg);
-    background-position: bottom center;
+    height: 360px;
+    background-image: url(imagens/modern-automobile-mechanic-composition.jpg);
+    background-position:bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,13 +80,13 @@ body{
 #txt1{
     background-color: rgba(0, 0, 0, 0.658);
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 10%;
+    left: 16%;
     color: #F8F7F9;
     font-size: 2em;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
-    margin: 50px;
-    padding: 10px;
+    margin: 60px 60px;
+    padding: 15px;
     border-radius: 10px 0px;
 }
 
@@ -82,7 +104,7 @@ section{
 }
 
 iframe{
-    margin: 1vw 30vw;
+    margin: 2vw 20vw 2vw 30vw;
     width: 40vw;
     height: 20vw;
     background-color: #585859;
