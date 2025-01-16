@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+</head>
+
+<style>
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+body{
+    background-color: rgb(219, 219, 219);
+}
+
+h1{
+    background-color: rgba(165, 42, 42, 0.295);
+    display: inline;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+td{
+    border: solid rgb(68, 68, 68);
+    background-color: white;
+}
+
+td,th{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+caption{
+    text-align: center;
+}
+
+table{
+    border: dotted rgba(66, 66, 66, 0.288);
+    margin: 20px 5px;
+}
+
+</style>
+
+<body>
+    <H1>Criando a estrutura básica de uma tabela!</H1>
+    <p>As tags que vão formar a estrutura básica de uma tabela em HTML são as tags -tr- e -td-. A tag -tr- representa uma linha e a tag -td- representa uma célula. 
+    <br> forma, a criação de colunas em uma tabela HTML é feita automaticamente através da quantidade de células incluídas dentro de uma linha. Por exemplo,</p>
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+
+        <tr> 
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+
+        <tr> 
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <h1>Célula título em tabelas:</h1>
+    <p>Caso queira incluir uma ou mais células que representem títulos, ganhando um destaque em relação às demais células, pode utilizar a tag -th-.</p>
+
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Título</th>
+            <th>Título</th>
+        </tr>
+
+        <tr> 
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+
+        <tr> 
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <h3>Podemos também utilizar títulos nas colunas:</h3>
+
+    <table>
+        <tr>
+            <th>Título</th>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+
+        <tr> 
+            <th>Título</th>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+
+        <tr> 
+            <th>Título</th>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <h1>Títulos em tabelas:</h1>
+    <p>A tabela HTML tem uma tag particular para definir um título. Essa tag é a -caption- -/caption-. 
+    <br>Em contraste com os demais elementos da tabela, a tag -caption- não será composta por células, portanto ficará acima da tabela, como um título.
+    <br>Desta forma, veja então o exemplo a seguir:</p>
+
+    <table>
+        <caption>Título da tabela</caption>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+
+        <tr> 
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+
+        <tr> 
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
