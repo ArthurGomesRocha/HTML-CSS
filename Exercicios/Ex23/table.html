@@ -42,11 +42,38 @@ table{
     margin: 20px 5px;
 }
 
+li{
+    font-weight: bold;
+    color: rgb(165, 42, 42);
+}
+
+#title{
+    font-family: 2em;
+    font-weight: bolder;
+    color: rgb(165, 42, 42);
+    text-shadow: 0px 0px 10px rgba(17, 17, 17, 0.048);
+}
+
+.number{
+    text-align: left;
+    vertical-align: middle;
+}
+
+.letter{
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.symbols{
+    text-align: right;
+    vertical-align: top;
+}
+
 </style>
 
 <body>
     <H1>Criando a estrutura básica de uma tabela!</H1>
-    <p>As tags que vão formar a estrutura básica de uma tabela em HTML são as tags -tr- e -td-. A tag -tr- representa uma linha e a tag -td- representa uma célula. 
+    <p>As tags que vão formar a estrutura básica de uma tabela em HTML são as tags &lt; tr &gt; e &lt; td &gt;. A tag &lt; tr &gt; representa uma linha e a tag &lt; td &gt; representa uma célula. 
     <br> forma, a criação de colunas em uma tabela HTML é feita automaticamente através da quantidade de células incluídas dentro de uma linha. Por exemplo,</p>
 
     <table>
@@ -70,7 +97,7 @@ table{
     </table>
 
     <h1>Célula título em tabelas:</h1>
-    <p>Caso queira incluir uma ou mais células que representem títulos, ganhando um destaque em relação às demais células, pode utilizar a tag -th-.</p>
+    <p>Caso queira incluir uma ou mais células que representem títulos, ganhando um destaque em relação às demais células, pode utilizar a tag &lt;th&gt;.</p>
 
     <table>
         <tr>
@@ -115,8 +142,8 @@ table{
     </table>
 
     <h1>Títulos em tabelas:</h1>
-    <p>A tabela HTML tem uma tag particular para definir um título. Essa tag é a -caption- -/caption-. 
-    <br>Em contraste com os demais elementos da tabela, a tag -caption- não será composta por células, portanto ficará acima da tabela, como um título.
+    <p>A tabela HTML tem uma tag particular para definir um título. Essa tag é a &lt;caption&gt; &lt;/caption&gt;. 
+    <br>Em contraste com os demais elementos da tabela, a tag &lt;caption&gt; não será composta por células, portanto ficará acima da tabela, como um título.
     <br>Desta forma, veja então o exemplo a seguir:</p>
 
     <table>
@@ -140,6 +167,37 @@ table{
         </tr>
     </table>
 
+    <h1>Alinhamento de texto dentro de uma tabela:</h1>
 
+    <p>Em uma célula pódemos alinhar um texto de duas formas,<b> horizontal e vertical.</b> <br>
+    E para isso utilizamos as seguinte estratégias:</p>
+    <ul>
+        <li>Alinhamento horizontal:</li>
+        <p>Para alinhar um texto horizontalmente utilizamos a tag "text-align" + "posição" <b>(left, center, right).</b></p>
+        <li>Alinhamento Vertical:</li>
+        <p>Em um texto o alinhamento vertical é feito da seguinte forma: <br>
+        "vertical-align" + "posição" <b>(top, middle, bottom). </b></p>
+    </ul>
+
+    <table>
+        <caption id="title">Alinhamento de texto</caption>
+        <tr>
+            <td class="number">1</td>
+            <td class="number">2</td>
+            <td class="number">3</td>
+        </tr>
+
+        <tr> 
+            <td class="letter">A</td>
+            <td class="letter">B</td>
+            <td class="letter">C</td>
+        </tr>
+
+        <tr> 
+            <td class="symbols">-</td>
+            <td class="symbols">+</td>
+            <td class="symbols">=</td>
+        </tr>
+    </table>
 </body>
 </html>
