@@ -30,6 +30,47 @@ header{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
 }
 
+.bttn{
+    position: fixed;
+    right: 5px;
+    bottom: 3px;
+    height: 65px;
+    width: 220px;
+    background-color: #F8F7F9;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
+}
+
+.bttn:hover{
+    background-color: #585859;
+    color: white;
+    transition: 0.6s;
+    opacity: 1;
+}
+
+
+.whatsapp{
+    background-image: url(imagens/whatsapp.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.txtx{
+    position: fixed;
+    right: 80px;
+    bottom: 15px;
+    font-size: 0.5em;
+}
+
+
 #boximg{
     background-color: white;
     height:300px;
@@ -66,6 +107,10 @@ body{
     background-color: white;
 }
 
+.container1{
+    position: relative;
+}
+
 #img1{
     height: 360px;
     background-image: url(imagens/modern-automobile-mechanic-composition.jpg);
@@ -75,13 +120,14 @@ body{
     background-attachment: fixed;
     position: relative;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.281);
+    opacity: 0.7;
 }
 
 #txt1{
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(0, 0, 0, 0.884);
     position: absolute;
-    top: 10%;
-    left: 16%;
+    top: 20%;
+    left: 15%;
     color: #F8F7F9;
     font-size: 2em;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
@@ -101,6 +147,11 @@ section{
     border-radius: 5px 0px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.151);
     
+}
+
+.video{
+    background-color: #F2911B;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.329);
 }
 
 iframe{
