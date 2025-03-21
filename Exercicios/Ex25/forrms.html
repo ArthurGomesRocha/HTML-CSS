@@ -5,14 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários HTML</title>
 </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background-image: url(imagens/18410.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
+    
+    div>p,h1,h2{
+        text-align: center;   
+    }
+
+    h1{
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 431;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 74;
+    }
+
+    form{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 20px;
+        width: 45vw;
+        background-color: rgba(0, 0, 0, 0.103);
+        border-radius: 20px;
+
+    }
+
+    
+</style>
+
 <body>
     
-    <H1>Criando o primeiro formulário em HTML</H1>
+    <div class="container">
+        <H1>Processo seletivo FASTLUB-BH</H1>
+        <h2>Venha fazer parte da nossa história!</h2>
+        <p>Identificamos seu perfil e acreditamos que ele pode se encaixar muito bem na nossa equipe aqui na BHDEVS. <br>
+            Estamos em busca de um profissional para a posição de programador JÚNIOR, e gostaríamos de convidá-lo(a) para participar do nosso processo seletivo. <br>
+            Acreditamos que sua experiência e habilidades podem agregar muito ao nosso time. <br>
+            Se tiver interesse, por favor, responda esse questionário a baixo. <br>
+            Caso tenha alguma dúvida, estamos à disposição! <br>
+    </div>
 
-    <form action="">
-        <p>Nome:</p> <input type="text" name="nome" id="nome">
-        <p>Sobrenome:</p> <input type="text" name="Sobrenome" id="Sobrenome">
-        <input type="submit" value="Enviar">
+    <form action="dados.php" method="post">
+         <p>
+            <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="Sobrenome">Sobrenome:</label>
+                <input type="text" name="Sobrenome" id="Sobrenome">
+        </p>
+        <p>
+            <label for="email">Email de contato:</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="celular">Celular:</label>
+            <input type="tel" name="celular" id="celular">
+        </p>
+
+        <p>
+            <label for="Senha">Senha:</label>
+            <input type="password" name="Senha" id="Senha">
+        </p>
+
+
+        <div class="checkcontainer">
+            <input type="submit" value="Enviar" id="Enviar">
+            <input type="reset" value="resetar" id="resetar">
+        </div>
     </form>
 </body>
 </html>
