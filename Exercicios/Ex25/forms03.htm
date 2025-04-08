@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms003</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="Nome">Nome:</label>
+            <input type="text" name="nome" required minlength="5" maxlength="30" placeholder="insira seu nome" autocomplete="name">
+        </p>
+        
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required="@" placeholder="insira seu e-mail"> <br>
+        </p>
+
+        <p>
+            <label for="password">Senha</label>
+            <input type="password" name="password" required minlength="8" placeholder="Insira sua senha de login"> <br>
+        </p>
+
+        <p>
+            <label for="imes">Mês:</label>
+            <input type="month" name="imes">
+        </p>
+
+        <p>
+            <label for="idia">Dia:</label>
+            <input type="date" name="idia">
+        </p>
+
+        <p>
+            <label for="ihora">Hora:</label>
+            <input type="time" name="ihora">
+        </p>
+
+        <input type="submit"> <input type="reset">
+    
+    </form>
+</body>
+</html>
