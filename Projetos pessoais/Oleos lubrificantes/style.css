@@ -32,6 +32,7 @@ header{
 
 .bttn{
     position: fixed;
+    color: black;
     right: 5px;
     bottom: 3px;
     height: 65px;
